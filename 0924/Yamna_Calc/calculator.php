@@ -56,7 +56,7 @@
             border: 2px solid #5e2a8c;
             width: 400px;
             text-align: center;
-            margin-top: 50px; /* فاصله 50 پیکسل از فرم */
+            margin-top: 50px; 
         }
         .result-container h1 {
             color: #4B0082; 
@@ -116,13 +116,11 @@
 </script>
 
 <?php
-// استفاده از isset به جای $_SERVER["REQUEST_METHOD"]
 if (isset($_POST['num1']) && isset($_POST['num2']) && isset($_POST['operation'])) {
     $num1 = $_POST['num1'];
     $num2 = $_POST['num2'];
     $operation = $_POST['operation'];
 
-    // انجام عملیات محاسباتی
     $result = "";
     switch ($operation) {
         case '+':
